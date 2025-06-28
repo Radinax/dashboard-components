@@ -1,5 +1,7 @@
+import CardPages from "@/pages/card-pages";
+
 function App() {
-  return <div>Hello world</div>;
+  return <CardPages />;
 }
 
 export default App;

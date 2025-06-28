@@ -1,6 +1,6 @@
-# React, TypeScript, Tailwind CSS Project Template with Vite & Bun
+# Dashboard Components
 
-This my template for building modern web applications using React, TypeScript, and Tailwind CSS, powered by the Vite build tool and the Bun runtime.
+These are some components I found myself creating over and over, so in this repo I want to have them all in one place.
 
 ## ✨ Features
 
@@ -10,67 +10,20 @@ This my template for building modern web applications using React, TypeScript, a
 - **Vite**: A next-generation frontend tooling that provides an incredibly fast development experience.
 - **Bun**: An all-in-one JavaScript runtime & toolkit, providing a fast package manager, bundler, and test runner.
 
-## 🚀 Getting Started
+Additional libraries:
 
-Follow these steps to get your development environment set up.
+- Lucide React
+- Tailwind Merge
+- Clsx
+- Recharts
 
-### Prerequisites
-
-Make sure you have Bun installed on your system.
-
-```bash
-curl -fsSL https://bun.sh/install | bash
-```
-
-### 📦 Installation
-
-1. Clone the repository (or create a new project from this template):
-
-If you're creating a new project from scratch, you can use Vite directly:
-
-```bash
-bun create vite@latest vite-react -- --template react-ts
-cd vite-react
-```
-
-Then, install Tailwind CSS:
-
-```bash
-bun add tailwindcss @tailwindcss/vite
-```
-
-Add the @tailwindcss/vite plugin to your Vite configuration.
-
-```ts
-import { defineConfig } from "vite";
-import tailwindcss from "@tailwindcss/vite";
-export default defineConfig({
-  plugins: [tailwindcss()],
-});
-```
-
-Add an @import to your CSS file that imports Tailwind CSS (main.css).
-
-```css
-@import "tailwindcss";
-```
-
-2. If you cloned this repository, simply navigate into the project directory:
-
-```bash
-git clone <repository-url>
-cd <repository-name>
-```
-
-3. Install dependencies:
+## 📦 Installation
 
 Bun will install all the necessary project dependencies:
 
 ```bash
 bun install
 ```
-
-## 🏃 Running the Development Server
 
 Start the development server with Vite:
 
@@ -128,21 +81,6 @@ bun preview
 
 ```bash
 bun lint
-```
-
-## ⚙️ Vite Configuration
-
-The vite.config.ts file allows you to customize Vite's behavior, such as adding plugins, configuring the development server proxy, or setting up build options.
-
-```ts
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite";
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react(), tailwindcss()],
-});
 ```
 
 ## 📦 Deployment
