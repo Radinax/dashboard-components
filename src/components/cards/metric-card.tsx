@@ -42,9 +42,11 @@ const MetricCard = ({
       : trend?.labelDown ?? defaultTrendLabels.down;
 
   return (
-    <Card className="border border-gray-300 bg-white shadow-sm hover:shadow-md transition-shadow duration-200 ease-in-out">
+    <Card className="border bg-card shadow-sm hover:shadow-md transition-shadow duration-200 ease-in-out border-border">
       <CardHeader className="relative">
-        <CardDescription className="text-gray-500">{title}</CardDescription>
+        <CardDescription className="text-muted-foreground">
+          {title}
+        </CardDescription>
         <CardTitle className="@[250px]/card:text-3xl text-2xl font-semibold tabular-nums">
           {getFormattedValue({ format, value })}
         </CardTitle>
@@ -52,7 +54,7 @@ const MetricCard = ({
           <div className="absolute right-4 top-4">
             <Badge
               variant="outline"
-              className="flex gap-1 rounded-lg text-xs shadow-sm border border-gray-400"
+              className="flex gap-1 rounded-lg text-xs shadow-sm border"
             >
               {trend.direction === "up" ? (
                 <>
@@ -80,7 +82,9 @@ const MetricCard = ({
             )}
           </div>
         )}
-        {footerText && <div className="text-gray-500">{footerText}</div>}
+        {footerText && (
+          <div className="text-muted-foreground">{footerText}</div>
+        )}
       </CardFooter>
     </Card>
   );

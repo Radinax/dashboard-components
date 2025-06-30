@@ -1,7 +1,7 @@
-import CardPages from "@/pages/card-pages";
+import { DashboardLayout } from "@/layout/dashboard-layout";
 
 function App() {
-  return <CardPages />;
+  return <DashboardLayout />;
 }
 
 export default App;
